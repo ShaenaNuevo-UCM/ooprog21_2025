@@ -12,22 +12,25 @@ public class DebugTrip
    private String mode;
    private static final String DEFAULT_CITY = "Atlanta";
    private static final String DEFAULT_MODE = "car";
-   public DebugTrip(String destination)
-   {
-      this.destination = destination; 
-   }
-   public DebugTrip(String destination, String departure)
-   {
-       this.destination = destination;
-       this.departure = departure;
-   }
-   public DebugTrip(String destination, String departure, String mode)
-   {
-      this.destination = destination;
-      this.departure = departure;
-      this.mode = mode;
-   }
-   public String getDestination()
+  public DebugTrip(String destination)
+{
+   this.destination = destination;
+   this.departure = DEFAULT_CITY;  
+   this.mode = DEFAULT_MODE;     
+}
+
+public DebugTrip(String destination, String departure)
+{
+    this.destination = destination;
+    this.departure = departure;
+    this.mode = DEFAULT_MODE;      }
+
+public DebugTrip(String destination, String departure, String mode)
+{
+   this.destination = destination;
+   this.departure = departure;
+   this.mode = mode;
+}   public String getDestination()
    {
       return destination;
    }
@@ -40,4 +43,3 @@ public class DebugTrip
       return mode;
    }
 }
-

@@ -1,4 +1,3 @@
-//NOT FINISHED
 // Program prompts user to enter a series of integers
 // separated by spaces
 // Program converts them to numbers and sums them
